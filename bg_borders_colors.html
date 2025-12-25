@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Components</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to left bottom, #556677, #aabbcc);
+            min-height: 100vh;
+        }
+
+        .container{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: lightblue;
+        }
+
+        span{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">.bg-primary-subtle</div>
+        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">.bg-secondary-subtle</div>
+        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 mb-2 bg-success-subtle text-success-emphasis">.bg-success-subtle</div>
+        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">.bg-danger-subtle</div>
+        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">.bg-warning-subtle</div>
+        <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+        <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">.bg-info-subtle</div>
+        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 mb-2 bg-light-subtle text-light-emphasis">.bg-light-subtle</div>
+        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+        <div class="p-3 mb-2 bg-dark-subtle text-dark-emphasis">.bg-dark-subtle</div>
+        <div class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</div>
+        <div class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</div>
+        <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+        <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+        <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+    </div>
+
+    <div class="container">
+        <div class="bg-success p-2 text-white">This is default success background</div>
+        <div class="bg-success p-2" style="--bs-bg-opacity: .5;">This is 50% opacity success background</div>
+
+        <div class="bg-success p-2 text-white">This is default success background</div>
+        <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+        <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+        <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+        <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
+    </div>
+
+    <div class="container">
+        <span class="border"></span>
+        <span class="border-top"></span>
+        <span class="border-end"></span>
+        <span class="border-bottom"></span>
+        <span class="border-start"></span>
+    </div>
+
+    <div class="container">
+        <span class="border border-0"></span>
+        <span class="border border-top-0"></span>
+        <span class="border border-end-0"></span>
+        <span class="border border-bottom-0"></span>
+        <span class="border border-start-0"></span>
+    </div>
+
+    <div class="container">
+        <span class="border border-primary"></span>
+        <span class="border border-primary-subtle"></span>
+        <span class="border border-secondary"></span>
+        <span class="border border-secondary-subtle"></span>
+        <span class="border border-success"></span>
+        <span class="border border-success-subtle"></span>
+        <span class="border border-danger"></span>
+        <span class="border border-danger-subtle"></span>
+        <span class="border border-warning"></span>
+        <span class="border border-warning-subtle"></span>
+        <span class="border border-info"></span>
+        <span class="border border-info-subtle"></span>
+        <span class="border border-light"></span>
+        <span class="border border-light-subtle"></span>
+        <span class="border border-dark"></span>
+        <span class="border border-dark-subtle"></span>
+        <span class="border border-black"></span>
+        <span class="border border-white"></span>
+    </div>
+
+    <div class="container">
+        <div class="mb-4">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+            Dangerous heading
+        </div>
+
+        <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+            Changing border color and width
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="border border-1"></span>
+        <span class="border border-2"></span>
+        <span class="border border-3"></span>
+        <span class="border border-4"></span>
+        <span class="border border-5"></span>
+    </div>
+
+    <div class="container">
+        <img src="..." class="rounded-0" alt="...">
+        <img src="..." class="rounded-1" alt="...">
+        <img src="..." class="rounded-2" alt="...">
+        <img src="..." class="rounded-3" alt="...">
+        <img src="..." class="rounded-4" alt="...">
+        <img src="..." class="rounded-5" alt="...">
+        <img src="..." class="rounded-circle" alt="...">
+        <img src="..." class="rounded-pill" alt="...">
+    </div>
+
+    <div class="container">
+        <p class="text-primary">.text-primary</p>
+        <p class="text-primary-emphasis">.text-primary-emphasis</p>
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-success-emphasis">.text-success-emphasis</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-danger-emphasis">.text-danger-emphasis</p>
+        <p class="text-warning bg-dark">.text-warning</p>
+        <p class="text-warning-emphasis">.text-warning-emphasis</p>
+        <p class="text-info bg-dark">.text-info</p>
+        <p class="text-info-emphasis">.text-info-emphasis</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-light-emphasis">.text-light-emphasis</p>
+        <p class="text-dark bg-white">.text-dark</p>
+        <p class="text-dark-emphasis">.text-dark-emphasis</p>
+
+        <p class="text-body">.text-body</p>
+        <p class="text-body-emphasis">.text-body-emphasis</p>
+        <p class="text-body-secondary">.text-body-secondary</p>
+        <p class="text-body-tertiary">.text-body-tertiary</p>
+
+        <p class="text-black bg-white">.text-black</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <p class="text-black-50 bg-white">.text-black-50</p>
+        <p class="text-white-50 bg-dark">.text-white-50</p>
+    </div>
+
+    <div class="container">
+        <div class="text-primary">This is default primary text</div>
+        <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+        <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+        <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
